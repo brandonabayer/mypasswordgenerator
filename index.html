@@ -3,12 +3,28 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Password Generator</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <script src='script.js'></script>
 </head>
 <body>
+ <h2>Password Generator</h2>
+ <div>
+     <p>Generate a Password</p><br>
+    <p>Please input a number between 8 and 128:</p>
     
+    
+    <form>
+        <input id="numb"><br>
+        <input type="checkbox" id="char1" value="Lowercase"> Lowercase <br>
+        <input type="checkbox" id="char2" value="Uppercase"> Uppercase <br>
+        <input type="checkbox" id="char3" value="Special"> Special <br>
+        <input type="checkbox" id="char4" value="Numeric"> Numeric <br>
+        <button type="button" onclick="myFunction()">Submit</button>
+        <p id="generator"></p>
+    </form>
+
+ </div>
 </body>
 </html>

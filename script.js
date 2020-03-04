@@ -13,14 +13,11 @@ function writePassword() {
     copyBtn.focus();
 }
 
-function copyToClipboard() {
-    // BONUS 
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// BONUS EVENT LISTENER
+
 function generatePassword() {
     var pLength = prompt("how long do you want the password to be? choose between 8-128")
     var valid = false;
@@ -38,11 +35,12 @@ function generatePassword() {
         }
     }
     console.log(pLength);
+    // variables
     var specialCharacters = confirm("Do you want special characters?");
     var numericCharacters = confirm("Do you want numeric characters?");
     var lowercaseCharacters = confirm("Do you want lowercase characters?");
     var uppercaseCharacters = confirm("Do you want uppercase characters");
-
+    // conditionals
     if (specialCharacters) {
         var symbols = '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~';
     }
@@ -55,6 +53,7 @@ function generatePassword() {
     if (uppercaseCharacters) {
         var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
+    // password generator
     var all = uppercase + lowercase + numbers + symbols;
     console.log(all);
     var password = '';
